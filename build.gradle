@@ -148,6 +148,10 @@ dependencies {
 jar {
     manifest {
         attributes([
+                'FMLModType': 'LANGPROVIDER'
+        ])
+
+        attributes([
                 "Specification-Title"     : "examplemod",
                 "Specification-Vendor"    : "examplemodsareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
