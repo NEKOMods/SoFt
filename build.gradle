@@ -8,8 +8,8 @@ plugins {
 
 def getVersion()
 {
-    String base_number = "0.0"
-    return base_number + "-${grgit.head().abbreviatedId}" + (grgit.status().isClean() ? "" : "+")
+    String base_number = "0.0.0"
+    return base_number + "+${grgit.head().abbreviatedId}" + (grgit.status().isClean() ? "" : "-dirty")
 }
 
 version = getVersion()
